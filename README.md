@@ -30,9 +30,18 @@ Full stack is a programming paradigm in which an application accepts user intera
 ## Chapter 1
 
 ## Chapter 2
+`awesome-rshiny`
+
 `golem`
 `bsplus`
 `shinyjqui`
+`shinydashboard`
+`plotly/dashR`
+
+## Demos
+`rstudio - shiny demos`
+`davidruvolo51/shinyAppTutorials`
+`daattali - demos`
 
 ### Shiny Packages
 `shinyWidgets`
