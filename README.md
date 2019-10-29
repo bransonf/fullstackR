@@ -4,7 +4,7 @@
 So you want to build a full-stack app in R?
 
 ### What is R?
-R is a multipurpose programming language, similar to Python. R was developed originally for statistical analysis, but thanks to a growing community, it is now useful for everything from general purpose scripting to -- yes -- full stack application development.
+R is a multipurpose programming language, similar to Python. R was developed originally for statistical analysis, but thanks to a growing community, it is now useful for everything from general purpose scripting to - yes - full stack application development.
 
 ### What is full-stack?
 Full stack is a programming paradigm in which an application accepts user interaction (usually via a graphical interface) and communicates with a server in order to return a result to the user. The segment that deals with user interaction is generally referred to as the 'front-end' and the logic that process this input to return information is generally referred to as the 'back-end'.
@@ -25,7 +25,8 @@ Full stack is a programming paradigm in which an application accepts user intera
 | Chapter 10 | Securing Your App |
 
 ## Preface
-[Companies using R](https://github.com/ThinkR-open/companies-using-r)
+While it is possible to build full stack applications in R, it may not always be the right choice. Although some 
+[companies are using R](https://github.com/ThinkR-open/companies-using-r), the R stack is among the least popular for full stack development. However, if you work in an environment where R is common (academia for example) and want to explore building applications, the R stack may be for you. It is also worth mentioning at this point that while you can build almost everything without leaving native R, you should not.
 
 ## Chapter 1
 
