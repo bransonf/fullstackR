@@ -81,7 +81,10 @@ Fonts
 
 ## Chapter 7
 `shinyF7`
+
+### Sensor Input
 `geoloc`
+`shinysense`
 
 ## Chapter 8
 `shinyStore`
@@ -90,7 +93,10 @@ Fonts
 `googleAuthR`
 
 ## Chapter 10
+
+### Intro to Encryption
 `cyphr`
+### Deploying behind HTTPS
 
 Notable Active Developers in the R Shiny Stack:
 @JohnCoene
