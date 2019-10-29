@@ -20,20 +20,31 @@ Full stack is a programming paradigm in which an application accepts user intera
 | Chapter 5 | Packaging and Deploying Apps: Docker and the Cloud |
 | Chapter 6 | Desktop Apps |
 | Chapter 7 | Mobile Apps |
-| Chapter 8 |  |
-| Chapter 9 |  |
-| Chapter 10 |  |
+| Chapter 8 | More Efficient Data: Intro to SQL |
+| Chapter 9 | Adding Dynamic Users |
+| Chapter 10 | Securing Your App |
 
 ## Preface
+[Companies using R](https://github.com/ThinkR-open/companies-using-r)
 
 ## Chapter 1
 
 ## Chapter 2
+`golem`
+`bsplus`
+`shinyjqui`
 
 ### Shiny Packages
-### Intro to HTML/CSS
-### Intro to JavaScript
+`shinyWidgets`
 
+### Intro to HTML/CSS
+Styling
+Fonts
+
+### Intro to JavaScript
+`shinyjs`
+`htmltools`
+`htmlwidgets`
 ## Chapter 3
 
 ### The Foundation
@@ -45,16 +56,36 @@ Full stack is a programming paradigm in which an application accepts user intera
 ### What is an API?
 ### Why use an API?
 ### Introduction to Plumber
+
+`tmobile/loadtest`
 ### OpenCPU, another R API Framework
 
 ## Chapter 5
+`ShinyProxy`
 
 ## Chapter 6
 
+### R Packages
+`r-shiny-electron`
+`RInno`
+`DesktopDeployR`
+
 ## Chapter 7
+`shinyF7`
+`geoloc`
 
 ## Chapter 8
+`shinyStore`
 
 ## Chapter 9
+`googleAuthR`
 
 ## Chapter 10
+`cyphr`
+
+Notable Active Developers in the R Shiny Stack:
+@JohnCoene
+@daattali
+@dreamRs
+@ColinFay
+@trestletech
