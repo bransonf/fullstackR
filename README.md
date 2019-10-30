@@ -83,6 +83,11 @@ Fonts
 ## Chapter 7
 `shinyF7`
 
+### Getting on the App Store
+Getting on the app store is becoming increasinly difficult, but you may not want to be on the app store anyway. And here's why:
+
+Unfortunately, if you still have a strong desire to get on the app store, you may have to write native apps. This is not something R is particularly well suited for.
+
 ### Sensor Input
 `geoloc`
 `shinysense`
