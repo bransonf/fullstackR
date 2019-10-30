@@ -76,6 +76,9 @@ Fonts
 `RInno`
 `DesktopDeployR`
 
+### Non-Shiny Apps
+`RGtk2`
+
 ## Chapter 7
 `shinyF7`
 
