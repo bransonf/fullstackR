@@ -23,10 +23,11 @@ Full stack is a programming paradigm in which an application accepts user intera
 | Chapter 8 | More Efficient Data: Intro to SQL |
 | Chapter 9 | Adding Dynamic Users |
 | Chapter 10 | Securing Your App |
+| Chapter 11 | Building off of R |
 
 ## Preface
 While it is possible to build full stack applications in R, it may not always be the right choice. Although some 
-[companies are using R](https://github.com/ThinkR-open/companies-using-r), the R stack is among the least popular for full stack development. However, if you work in an environment where R is common (academia for example) and want to explore building applications, the R stack may be for you. It is also worth mentioning at this point that while you can build almost everything without leaving native R, you should not.
+[companies are using R](https://github.com/ThinkR-open/companies-using-r), the R stack is among the least popular for full stack development. However, if you work in an environment where R is common (academia for example) and want to explore building applications, the R stack may be for you. It is also worth mentioning at this point that while you can build almost everything without leaving native R, you probably should not. R is incredibly capable with interfacing a variety of other languages (see Chapter 11) and doing so will greatly expand the capabilites of your application. Using SQL or other databases, for example, offers a more manageable and much quicker interface to large quantities of data.
 
 ## Chapter 1
 
@@ -38,11 +39,6 @@ While it is possible to build full stack applications in R, it may not always be
 `shinyjqui`
 `shinydashboard`
 `plotly/dashR`
-
-## Demos
-`rstudio - shiny demos`
-`davidruvolo51/shinyAppTutorials`
-`daattali - demos`
 
 ### Shiny Packages
 `shinyWidgets`
@@ -99,9 +95,26 @@ Fonts
 `cyphr`
 ### Deploying behind HTTPS
 
+## Chapter 11
+
+### Other Languages
+R offers the ability to interface a variety of other programming languages. Here, I will highlight some notable ones, and why you may want to integrate them with your application.
+
+- Python
+- C++
+- JavaScript
+
+Learning other languages has many other advantages as well. For example, JavaScript is currently in very high demand in the labor market.
+
+## Other Information
 Notable Active Developers in the R Shiny Stack:
 @JohnCoene
 @daattali
 @dreamRs
 @ColinFay
 @trestletech
+
+## Demos
+`rstudio - shiny demos`
+`davidruvolo51/shinyAppTutorials`
+`daattali - demos`
