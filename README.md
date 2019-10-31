@@ -110,6 +110,8 @@ Unfortunately, if you still have a strong desire to get on the app store, you ma
 ## Chapter 10
 
 ### Intro to Encryption
+At some point, your application may deal with sensitive data. In such cases, you should encrypt the data before exchanging it with the server. There are several considerations you must make when encrypting data, but let us begin with a high-level overview of encryption.
+
 `cyphr`
 ### Deploying behind HTTPS
 
