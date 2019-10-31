@@ -30,6 +30,15 @@ While it is possible to build full stack applications in R, it may not always be
 [companies are using R](https://github.com/ThinkR-open/companies-using-r), the R stack is among the least popular for full stack development. However, if you work in an environment where R is common (academia for example) and want to explore building applications, the R stack may be for you. It is also worth mentioning at this point that while you can build almost everything without leaving native R, you probably should not. R is incredibly capable with interfacing a variety of other languages (see Chapter 11) and doing so will greatly expand the capabilites of your application. Using SQL or other databases, for example, offers a more manageable and much quicker interface to large quantities of data.
 
 ## Chapter 1
+The most common method available for creating web applications using R is Shiny. Shiny has come a long way since its inception, and many popular web libraries are being ported to Shiny. To get started with Shiny, it's recommended that you have an up-to-date installation of [RStudio](https://rstudio.com/products/rstudio/#rstudio-desktop). Using RStudio will allow you to quickly preview your application and poses many other benefits of using an integrated development environment.
+
+R Shiny apps are made of two parts; a user interface and a server. Although it is possible to put these in a single `app.R` file, I strongly reccomend that you do not. As you will find, larger and more complex projects benefit the most from clear code separation. Instead you should use a seperate `ui.R` and `server.R` file. Naming is important, as Shiny will always assume your ui and server to have these exact names.
+
+The `ui.R` file contains instructions for how to generate a webpage. This is practically no different than writing HTML if you're familiar.
+
+The `server.R` file contains instructions for making calculations or computations based on user input. Typically, user input will trigger an action on the server side, and often return something back to the user.
+
+You may think of the ui as the 'front-end' and the server as the 'back-end'. As such, it is generally best practice to do heavy computations on the server side. Your users, known as 'clients' may visit your website or use your application on any device. The server, however, you have control over how powerful it is.
 
 ## Chapter 2
 `awesome-rshiny`
