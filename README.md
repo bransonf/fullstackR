@@ -41,13 +41,18 @@ The `server.R` file contains instructions for making calculations or computation
 You may think of the ui as the 'front-end' and the server as the 'back-end'. As such, it is generally best practice to do heavy computations on the server side. Your users, known as 'clients' may visit your website or use your application on any device. The server, however, you have control over how powerful it is.
 
 ## Chapter 2
+
+Given the environments where Shiny is often used, dashboards are among the most common use cases. As such, there are many packages that allow for quickly prototyping, creating and deploying interactive dashboards. `shinydashboard` provides a standard ui library for making Shiny dashboards, and `plotly/dashR` bridges Shiny with the standard plotly framework.
+
+Many other linkages have been created, such as `bsplus`, which adds support for some important elements of the bootstrap library. Or, `shinyjqui`, which adds support for elements from the jQuery library.
+
+Other tools have been developed, such as `golem`, which aims to create a more organized pattern for developing very large Shiny applications.
+
 `awesome-rshiny`
 
-`golem`
-`bsplus`
-`shinyjqui`
-`shinydashboard`
-`plotly/dashR`
+
+
+
 
 ### Shiny Packages
 `shinyWidgets`
