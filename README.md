@@ -63,7 +63,7 @@ Fonts
 ## Chapter 3
 
 ### The Foundation
-`fiery`
+At the fundamental level, the role of a server is to distribute and manipulate documents. Thus, it is possible to build an application with more control than using Shiny as a framework. The package `fiery` allows you to do just this.
 `httpuv`
 
 ## Chapter 4
