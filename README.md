@@ -93,17 +93,19 @@ At the fundamental level, the role of a server is to distribute and manipulate d
 
 ## Chapter 6
 
-### R Packages
+In some environments, it may be preferable to release executable desktop applications as opposed to web-based ones. For one, by disconnecting your application from the internet, you reduce the number of possible security vulnerabilites. Or, you just may not need to share your application externally, in which case web hosting can be a wasteful expense. Of course you can always share applications using Docker containers, but even this has its limitations. In many environments, for example, users do not have the neccessary privledges (or perhaps requisite knowledge) to operate with Docker containers. Luckily, several packages exist, each with slightly different methods of abstracting the environment to the desktop.
 `r-shiny-electron`
 `RInno`
 `DesktopDeployR`
 
 ### Non-Web-Based Apps
-`RGtk2`
-`gWidgets`
+
+In some situations, it made be advantageous to develop the entire application agnostic to the web. In these situations, using other libraries for building applications may be to your advantage. `RGtk2` creates an API to the GTK framework and `gWidgets` is a linkage to several supported frameworks. QT and GTK are popular and widely regarded these days. If you have trouble picking a framework to begin with, I would choose QT.
 
 ## Chapter 7
-`shinyF7`
+
+Developing for mobile comes with a whole host of extra considerations. Not only do you have to consider the variability of screen sizes (and possibly orientation), but you should consider things like touch based interface, variable connectivity and caching.
+At least a few of these things can be handled using a mobile-development framework like `shinyF7`, which is a linkage to the F7 mobile development library.
 
 ### Getting on the App Store
 Getting on the app store is becoming increasinly difficult, but you may not want to be on the app store anyway. And here's why:
@@ -111,8 +113,7 @@ Getting on the app store is becoming increasinly difficult, but you may not want
 Unfortunately, if you still have a strong desire to get on the app store, you may have to write native apps. This is not something R is particularly well suited for.
 
 ### Sensor Input
-`geoloc`
-`shinysense`
+One of the exciting parts about mobile development is all of the sensors embedded in most mobile devices today. In order to access these sensors, you will have to ask for user permission, so keep this in mind and take precautions as to how this data is stored and processed. One of the most useful pieces of information is a user's location. The `geoloc` package allows you to interface most browser APIs for geolocation. If you find GPS methods to be inviable, Google's mapping suite offers a geolocation API that uses connection to cellular towers and internet access points as a proxy for the client's approximate location. The `shinysense` packages enables access to a variety of other sensors as well.
 
 ## Chapter 8
 `shinyStore`
