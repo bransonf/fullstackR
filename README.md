@@ -119,6 +119,9 @@ At some point, your application may deal with sensitive data. In such cases, you
 
 `cyphr`
 ### Deploying behind HTTPS
+It is important, especially when dealing with private data, that you deploy your web application with Transport Layer Security (TLS) enabled. This encrypts the data being sent to and received from the browser. It also verifies the integrity of the server-client connection. To put it simply, it's what puts the S in HTTPS. If you want security, you need it.
+
+There are several ways to go about implementing TLS, but one of the most common is using a reverse proxy. In this configuration, the client browser connects to the server via a secured domain, and the information is subsequently forwared to and from your application. In order to accomplish this, you will also need a signed certificate. You can get a free self-signed certificate using Let's Encrypt.
 
 ## Chapter 11
 
