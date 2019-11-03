@@ -1,5 +1,7 @@
 `This is a work in progress, but it may turn into a short book if there is interest`
 
+If you find this interesting, you may also be interested in the book that Hadley Wickham is writing, [Mastering Shiny](https://github.com/hadley/mastering-shiny) While Hadley's book aims to explore the Shiny framework, this book aims to explore R as a mulitpurpose language for full stack application development, and does so using Shiny only as an introduction to full stack.
+
 # fullstackR
 So you want to build a full-stack app in R?
 
@@ -62,7 +64,13 @@ Styling
 Fonts
 
 ### Intro to JavaScript
-`shinyjs`
+
+JavaScript is the language of the modern web browser. One of the strong suits of JavaScript is that it runs on virtually any device with a web browser. It is one of the most, if not THE most popular programming language today. In the confines of a browser, it has no access to system functions or file manipulation, but through products like Node.js, it can be used to write an entire application as well. The advantage to knowing JavaScript when developing R applications is 
+
+If you'd like to learn the full workings of JavaScript, head to [javascript.info](http://javascript.info/)
+
+Thanks to Dean Attali, `shinyjs` was developed, bringing JavaScript closer to Shiny than ever before. However, you may still want to know about the JavaScript API for R shiny applications. At its core, you can use JS to pass other inputs to your Shiny apps (Like raw keystrokes!) For more information about Shiny/JS integration, you can read more on the [Shiny blog](https://shiny.rstudio.com/articles/communicating-with-js.html)
+
 `htmltools`
 `htmlwidgets`
 ## Chapter 3
