@@ -116,6 +116,24 @@ Unfortunately, if you still have a strong desire to get on the app store, you ma
 One of the exciting parts about mobile development is all of the sensors embedded in most mobile devices today. In order to access these sensors, you will have to ask for user permission, so keep this in mind and take precautions as to how this data is stored and processed. One of the most useful pieces of information is a user's location. The `geoloc` package allows you to interface most browser APIs for geolocation. If you find GPS methods to be inviable, Google's mapping suite offers a geolocation API that uses connection to cellular towers and internet access points as a proxy for the client's approximate location. The `shinysense` packages enables access to a variety of other sensors as well.
 
 ## Chapter 8
+
+If you're building on the R stack, it's fair assumption that it has something to do with data. Now while dataframes are great for interactive use, they are a serious limitation to application performance. Instead, by using SQL, you can increase performance exponentially.
+
+If you have never used SQL before, do not be intimidated. First you will need to choose an implementation. SQLite, MySQL and postgreSQL are probably the most popular. SQLite is meant for local implementations and lightweight as the name implies. Postgres is becoming increasingly popular as it is both performant and open source.
+
+The magic behind SQL is that by providing clues about your data, you can greatly increase the speed at which a query can be made.
+
+Different implementations will vary, but the common data types are:
+```
+BOOLEAN
+INT
+BIGINT
+NUMERIC
+CHAR
+VARCHAR
+TEXT
+```
+
 `shinyStore`
 
 ## Chapter 9
@@ -124,9 +142,11 @@ One of the exciting parts about mobile development is all of the sensors embedde
 ## Chapter 10
 
 ### Intro to Encryption
-At some point, your application may deal with sensitive data. In such cases, you should encrypt the data before exchanging it with the server. There are several considerations you must make when encrypting data, but let us begin with a high-level overview of encryption.
+At some point, your application may deal with sensitive data. In such cases, you should encrypt the data before exchanging it with the server. There are several considerations you must make when encrypting data, but let us begin with a high-level overview of encryption. The `cyphr` package implements all the hashing algorithms you need to encrypt your data.
 
-`cyphr`
+Encryption works by the science of cryptography. You pass data through a hashing algorithm. Common implementations are the `SHA` and `MD` family. Other implementations exist, but for most use cases you should use one of the secure hashing algorithms (SHA). Also note, `MD5` is generally recognized as insecure, so don't use it! This hashing algorithm maps data to a hash of a fixed length. In other works, it converts your data to a long, seemingly random string. Reversing the process is typically infeasible. Only by having the key used to encrypt the data may you decrypt it.
+
+
 ### Deploying behind HTTPS
 It is important, especially when dealing with private data, that you deploy your web application with Transport Layer Security (TLS) enabled. This encrypts the data being sent to and received from the browser. It also verifies the integrity of the server-client connection. To put it simply, it's what puts the S in HTTPS. If you want security, you need it.
 
