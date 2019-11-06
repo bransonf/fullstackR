@@ -134,6 +134,10 @@ VARCHAR
 TEXT
 ```
 
+Luckily, many implementations exist in R. The `DBI` package is at the core of many of these implementations.
+You can read more at [db.rstudio.com](https://db.rstudio.com/)
+
+
 `shinyStore`
 
 ## Chapter 9
@@ -162,6 +166,8 @@ R offers the ability to interface a variety of other programming languages. Here
 - JavaScript
 
 Learning other languages has many other advantages as well. For example, JavaScript is currently in very high demand in the labor market.
+
+R has incredibly good C++ support through `Rcpp`. Python can be interfaced through `reticulate` although you will need to have the python interpreter installed and direct to its path.
 
 ## Other Information
 Notable Active Developers in the R Shiny Stack:
