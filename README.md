@@ -89,7 +89,17 @@ At the fundamental level, the role of a server is to distribute and manipulate d
 ### OpenCPU, another R API Framework
 
 ## Chapter 5
-`ShinyProxy`
+To deploy your shiny application, you will need a server and a domain name. You can likely get free temporary hosting to develop with from one of the major cloud providers. Google for example offers $300 for their cloud platform to new users in the first year. Amazon Web Services has similar offerings for free.
+
+You should also obtain a domain name from a domain provider. This isn't strictly neccessary, but doing so makes working with the server much easier because you can use a human readable name instead of an IP address. Next, you should configure your server to use a static IP address with your cloud provider. Then, you should add a DNS record with your domain provider that points to the IP address of your server.
+
+Once that's complete, you will need to install some dependencies on this server. Most importantly you will need a web server, Nginx for example, and then you will need to install R, R shiny server and any neccessary dependencies for your application.
+
+While you can do these things directly on your server, this is not portable. Meaning, if you lose access to your server or want to change providers, you will liekly need to repeat this process. However, that's where a container system like Docker comes in.
+
+In brief, Docker allows you to abstract a server environment into a portable image (Basically, it's a whole operating system). An image contains the necessary dependencies for running an application. First, you write a Dockerfile and compile the image. A deployed image is known as a container. Docker images are flexible, and can be used in a variety of configurations to interact with other containers using Docker compose, or for more complex applications Kubernetes.
+
+Additionally, for applications that you anticipate will have large concurrent usage, you may want to consider using something like `ShinyProxy`. ShinyProxy is a free solution to deploying load balanced R shiny applications. Meaning, unlike Docker compose or Kubernetes, instances of your Shiny application will be pre-allocated, reducing the computational time required to initialize an instance of the application.
 
 ## Chapter 6
 
@@ -101,6 +111,8 @@ In some environments, it may be preferable to release executable desktop applica
 ### Non-Web-Based Apps
 
 In some situations, it made be advantageous to develop the entire application agnostic to the web. In these situations, using other libraries for building applications may be to your advantage. `RGtk2` creates an API to the GTK framework and `gWidgets` is a linkage to several supported frameworks. QT and GTK are popular and widely regarded these days. If you have trouble picking a framework to begin with, I would choose QT.
+
+Building desktop applications is outside the scope of this document, but careful considerations should be taken in their development. Unlike web applications, desktop applications have close access to system memory and resources. Developing portable desktop applications comes with an entirely different set of challeneges than the web. And due to limitations within the language, R is not preferable for large desktop applications. You should investigate low-level languages such as C++, Rust, or Go if your intention is to deploy a performant desktop application.
 
 ## Chapter 7
 
